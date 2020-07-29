@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp"/>
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="148dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/tv_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        app:srcCompat="@drawable/unknown"/>
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unknown"
+        android:textSize="18sp"
+        android:layout_below="@+id/iv_weather_icon"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="70sp"
+        android:layout_below="@+id/tv_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:id="@+id/tv_max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_temp"
+        android:layout_below="@+id/tv_weather"
+        android:layout_marginTop="60sp"
+        android:layout_marginRight="30sp"
+        android:text="H -"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_min_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_weather"
+        android:layout_toRightOf="@+id/tv_temp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="60sp"
+        android:text="L -"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_temp_feels_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_temp"
+        android:layout_centerHorizontal="true"
+        android:text="feels like -"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_temp_feels_like"
+        android:layout_marginTop="60sp"
+        android:text="Humidity: -"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tv_winds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_humidity"
+        android:layout_marginTop="20sp"
+        android:text="Winds: -"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+</RelativeLayout>
